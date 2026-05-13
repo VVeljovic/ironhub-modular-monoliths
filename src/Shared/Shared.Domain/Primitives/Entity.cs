@@ -1,4 +1,4 @@
-﻿namespace Shared.Domain
+﻿namespace Shared.Domain.Primitives
 {
     public abstract class Entity : IEquatable<Entity>
     {
@@ -32,7 +32,9 @@
 
         public override bool Equals(object? obj)
         {
-            return obj is Entity entity && entity.GetType() == GetType() && entity.Id == Id;
+            return obj is Entity entity && 
+                entity.GetType() == GetType() && 
+                entity.Id == Id;
         }
 
         public override int GetHashCode()
