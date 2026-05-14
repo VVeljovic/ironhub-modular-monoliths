@@ -1,4 +1,6 @@
-﻿namespace Shared.Domain.Primitives
+﻿using Shared.Domain.Primitives;
+
+namespace Shared.Domain.Primitives
 {
     public abstract record DomainEvent(Guid EventId, DateTime OccuredOn) : IDomainEvent
     {
