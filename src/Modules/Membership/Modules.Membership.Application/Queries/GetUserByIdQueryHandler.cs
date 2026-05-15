@@ -9,7 +9,7 @@ namespace Modules.Membership.Application.Queries
     {
         public async Task<Result<UserResponse>> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
-            var user = await userRepository.GetByIdAsync(request.UserId);
+            var user = await userRepository.GetByIdAsync(request.UserId, cancellationToken);
 
             if (user is null)
             {
