@@ -1,6 +1,6 @@
 ﻿using Modules.Identity.Domain;
 
-namespace Modules.Membership.Application.Queries
+namespace Modules.Identity.Application.Queries
 {
     public sealed record UserResponse(Guid Id,
         FullName FullName,

@@ -1,7 +1,7 @@
 ﻿using Modules.Identity.Domain;
 using Shared.Application;
 
-namespace Modules.Membership.Application.Interfaces
+namespace Modules.Identity.Application.Interfaces
 {
     public interface IUserRepository : IRepository<User>
     {

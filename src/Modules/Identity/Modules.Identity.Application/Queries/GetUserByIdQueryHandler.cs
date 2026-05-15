@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Modules.Identity.Domain;
-using Modules.Membership.Application.Interfaces;
+using Modules.Identity.Application.Interfaces;
 using Shared.Domain.Primitives;
 
-namespace Modules.Membership.Application.Queries
+namespace Modules.Identity.Application.Queries
 {
     public sealed class GetUserByIdQueryHandler(IUserRepository userRepository) : IRequestHandler<GetUserByIdQuery, Result<UserResponse>>
     {
